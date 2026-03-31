@@ -12,43 +12,28 @@ export default function EmmacWebsite() {
       category: "Civil Works",
       client: "Ministry of Water & Sanitation",
       period: "2023–2025",
-      images: [
-        "/images/Project-irrigation_9.jpg",
-        "/images/project-irrigation_6.jpg",
-        "/images/project-irrigation.jpg",
-        "/images/project-irrigation_7.jpg",
-      ],
-      hero: "/images/project-irrigation_6.jpg",
+      hero: "/Upload/main/Public/images/project-irrigation 6.jpg",
     },
     {
       title: "River Training & Dykes",
       category: "Civil Works",
       client: "Roads Authority",
       period: "2018–2021",
-      hero: "/images/RIver_Training_and_dykes.jpg",
+      hero: "/Upload/main/Public/images/River Training and dykes.jpg",
     },
     {
       title: "CDSS Construction Project",
       category: "Building Construction",
       client: "USAID",
       period: "2023–2025",
-      images: [
-        "/images/project-cdss_1.jpg",
-        "/images/project-cdss_2.jpg",
-        "/images/project-cdss_3.jpg",
-      ],
-      hero: "/images/project-cdss_2.jpg",
+      hero: "/Upload/main/Public/images/project-cdss 2.jpg",
     },
     {
       title: "Office & Residential Complex",
       category: "Building Construction",
       client: "Anchor Mooring Partners",
       period: "2021",
-      images: [
-        "/images/project-commercial.jpg",
-        "/images/Project-commercial_2.jpg",
-      ],
-      hero: "/images/project-commercial.jpg",
+      hero: "/Upload/main/Public/images/project-commercial.jpg",
     },
   ];
 
@@ -79,7 +64,6 @@ export default function EmmacWebsite() {
   return (
     <div className="min-h-screen bg-neutral-950 text-white font-sans">
 
-      {/* NAV */}
       <header className="sticky top-0 z-50 border-b border-white/10 bg-neutral-950/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
           <div>
@@ -98,17 +82,14 @@ export default function EmmacWebsite() {
         </div>
       </header>
 
-      {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10 min-h-[90vh] flex items-center">
-        {/* Background image collage */}
-        <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 opacity-20">
-          <img src="/images/project-commercial.jpg" className="w-full h-full object-cover" alt="" />
-          <img src="/images/project-cdss_2.jpg" className="w-full h-full object-cover" alt="" />
-          <img src="/images/project-irrigation_6.jpg" className="w-full h-full object-cover" alt="" />
-          <img src="/images/RIver_Training_and_dykes.jpg" className="w-full h-full object-cover" alt="" />
+        <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 opacity-25">
+          <img src="/Upload/main/Public/images/project-commercial.jpg" className="w-full h-full object-cover" alt="" />
+          <img src="/Upload/main/Public/images/project-cdss 2.jpg" className="w-full h-full object-cover" alt="" />
+          <img src="/Upload/main/Public/images/project-irrigation 6.jpg" className="w-full h-full object-cover" alt="" />
+          <img src="/Upload/main/Public/images/River Training and dykes.jpg" className="w-full h-full object-cover" alt="" />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-neutral-950 via-neutral-950/90 to-neutral-950/60" />
-
+        <div className="absolute inset-0 bg-gradient-to-r from-neutral-950 via-neutral-950/90 to-neutral-950/50" />
         <div className="relative z-10 mx-auto grid max-w-7xl gap-12 px-6 py-24 lg:grid-cols-[1.2fr_0.8fr] lg:px-10">
           <div>
             <div className="mb-6 inline-flex rounded-full border border-white/15 px-4 py-2 text-xs uppercase tracking-[0.3em] text-white/60">
@@ -129,7 +110,6 @@ export default function EmmacWebsite() {
               </a>
             </div>
           </div>
-
           <div className="grid grid-cols-2 gap-4">
             {stats.map((item) => (
               <div key={item.label} className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
@@ -141,7 +121,6 @@ export default function EmmacWebsite() {
         </div>
       </section>
 
-      {/* SERVICES */}
       <section id="services" className="border-b border-white/10 bg-white/[0.02]">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">What We Do</p>
@@ -157,7 +136,6 @@ export default function EmmacWebsite() {
         </div>
       </section>
 
-      {/* PROJECTS */}
       <section id="projects" className="border-b border-white/10">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">Portfolio</p>
@@ -191,7 +169,6 @@ export default function EmmacWebsite() {
         </div>
       </section>
 
-      {/* CLIENTS */}
       <section id="clients" className="border-b border-white/10 bg-white/[0.02]">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-10">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">Who We Work With</p>
@@ -209,14 +186,13 @@ export default function EmmacWebsite() {
         </div>
       </section>
 
-      {/* CONTACT */}
       <section id="contact" className="bg-white/[0.02]">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-24 lg:grid-cols-2 lg:px-10">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/40">Contact</p>
             <h2 className="mt-3 text-3xl font-bold tracking-tight md:text-4xl">Start a conversation.</h2>
             <p className="mt-4 max-w-sm text-white/55 leading-7">
-              Whether it's a large infrastructure project or a commercial build, we're ready to deliver. Reach out to discuss your requirements.
+              Whether it is a large infrastructure project or a commercial build, we are ready to deliver.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-neutral-900 p-8">
@@ -230,17 +206,13 @@ export default function EmmacWebsite() {
                 <div className="mt-2 text-base text-white">Lilongwe, Malawi</div>
               </div>
             </div>
-            <a
-              href="mailto:info@emmacmw.net"
-              className="mt-8 block w-full rounded-2xl bg-white px-6 py-3 text-center text-sm font-semibold text-black transition hover:opacity-90"
-            >
+            <a href="mailto:info@emmacmw.net" className="mt-8 block w-full rounded-2xl bg-white px-6 py-3 text-center text-sm font-semibold text-black transition hover:opacity-90">
               Send an Email
             </a>
           </div>
         </div>
       </section>
 
-      {/* FOOTER */}
       <footer className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10">
           <div>
